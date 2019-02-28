@@ -101,7 +101,7 @@
 		
 		// Функция для сохранения точки в БД + обновляет список в селекторе
 		function savePoint(){
-			if(lastResult.length > 0){
+			if(lastResult.name != null){
 				pointList[pointList.length] = lastResult;
 				
 				buildSelector('selector1');
